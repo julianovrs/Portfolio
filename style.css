@@ -1,0 +1,94 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: 1rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #111;
+    border: 2px solid #222;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    color: #ff0000;
+    margin: 1rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+    color: #ccc;
+  }
+  
+  .card a {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.7rem;
+    background-color: #ff0000;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .card a:hover {
+    background-color: #fff;
+    color: #ff0000;
+    transform: scale(1.1);
+  }
+  
